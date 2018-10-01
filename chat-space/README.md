@@ -1,28 +1,27 @@
 # README
 
-
-##usersテーブル
+## usersテーブル
 |column|type|options|
 |------|----|-------|
 |name|string|null: false, unique: true|
 |email|string|null: false, unique: true|
 
-###Association
+### Association
 has_many :groups
 has_many :messages
 
 
-##groupsテーブル
+## groupsテーブル
 |column|type|options|
 |------|----|-------|
 |name|string|null: false, unique: true|
 
-###Association
+### Association
 has_many :users
 has_many :messages
 
 
-##messagesテーブル
+## messagesテーブル
 |column|type|options|
 |------|----|-------|
 |body|text|null: false|
@@ -30,18 +29,18 @@ has_many :messages
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-###Association
+### Association
 blongs_to :user
 blongs_to :group
 
 
-##group_userテーブル
+## membersテーブル
 |column|type|options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true||
 
-###Association
+### Association
 has_many :users
 has_many :groups
 
