@@ -15,7 +15,7 @@
 ## usersテーブル
 |column|type|options|
 |------|----|-------|
-|name|string|null: false, unique: true, add: index|
+|name|string|null: false, unique: true, index: true|
 
 ### Association
 - has_many :messages
