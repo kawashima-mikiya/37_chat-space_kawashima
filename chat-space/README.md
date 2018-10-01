@@ -7,7 +7,7 @@
 |email|string|null: false, unique: true|
 
 ### Association
-- has_many :groups
+- has_many :groups, through: :members
 - has_many :messages
 
 
@@ -17,7 +17,7 @@
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :users
+- has_many :users, through: :members
 - has_many :messages
 
 
