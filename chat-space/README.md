@@ -1,5 +1,17 @@
 # README
 
+## membersテーブル
+|column|type|options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
+*****
+
 ## usersテーブル
 |column|type|options|
 |------|----|-------|
@@ -29,25 +41,15 @@
 |column|type|options|
 |------|----|-------|
 |body|text||
-|image|string||
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
-### Association
-- blongs_to :user
-- blongs_to :group
-
-*****
-
-## membersテーブル
-|column|type|options|
-|------|----|-------|
+|image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :group
+
+
 
 
 
