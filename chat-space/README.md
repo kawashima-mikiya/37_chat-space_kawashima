@@ -10,6 +10,7 @@
 - has_many :groups, through: :members
 - has_many :messages
 
+*****
 
 ## groupsテーブル
 |column|type|options|
@@ -19,6 +20,8 @@
 ### Association
 - has_many :users, through: :members
 - has_many :messages
+
+*****
 
 
 ## messagesテーブル
@@ -33,6 +36,7 @@
 - blongs_to :user
 - blongs_to :group
 
+*****
 
 ## membersテーブル
 |column|type|options|
