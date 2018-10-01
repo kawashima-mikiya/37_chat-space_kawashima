@@ -7,8 +7,8 @@
 |email|string|null: false, unique: true|
 
 ### Association
-has_many :groups
-has_many :messages
+- has_many :groups
+- has_many :messages
 
 
 ## groupsテーブル
@@ -17,8 +17,8 @@ has_many :messages
 |name|string|null: false, unique: true|
 
 ### Association
-has_many :users
-has_many :messages
+- has_many :users
+- has_many :messages
 
 
 ## messagesテーブル
@@ -30,8 +30,8 @@ has_many :messages
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-blongs_to :user
-blongs_to :group
+- blongs_to :user
+- blongs_to :group
 
 
 ## membersテーブル
@@ -41,8 +41,8 @@ blongs_to :group
 |group_id|integer|null: false, foreign_key: true||
 
 ### Association
-has_many :users
-has_many :groups
+- has_many :users
+- has_many :groups
 
 
 
