@@ -18,9 +18,9 @@
 |name|string|null: false, unique: true, add: index|
 
 ### Association
-- has_many :groups, through: :members
 - has_many :messages
 - has_many :members
+- has_many :groups, through: :members
 
 *****
 
@@ -30,12 +30,11 @@
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :users, through: :members
 - has_many :messages
 - has_many :members
+- has_many :users, through: :members
 
 *****
-
 
 ## messagesテーブル
 |column|type|options|
