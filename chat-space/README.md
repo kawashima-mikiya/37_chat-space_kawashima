@@ -9,6 +9,7 @@
 ### Association
 - has_many :groups, through: :members
 - has_many :messages
+- has_many :members
 
 *****
 
@@ -20,6 +21,7 @@
 ### Association
 - has_many :users, through: :members
 - has_many :messages
+- has_many :members
 
 *****
 
@@ -42,11 +44,12 @@
 |column|type|options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true||
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :users
 - has_many :groups
+
 
 
 
