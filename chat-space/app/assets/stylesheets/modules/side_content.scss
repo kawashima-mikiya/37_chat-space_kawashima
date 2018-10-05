@@ -1,42 +1,41 @@
-  .side-content {
+.side-content {
 	width: 300px;
 	height: 100%;
 	background-color: #2f3e51;
 	float: left;
-    .header{
-      height: 128px;
-      background-color: #253141;
-      padding: 0px 20px;
-      &__user-name{
-      	color: #FFFFFF;
-      	float: left;
-      	font-size: 20px;
-      	font-weight: bold;
-      	display: inline-block;
-      	line-height: 128px;
-      }
-      .icon{
-      	float: right;
-      	margin-left: 5px;
-      	color: #FFF;
-      	line-height: 128px;
-      }
-
+  .header{
+    height: 128px;
+    background-color: #253141;
+    padding: 0px 20px;
+    &__user-name{
+      color: #FFFFFF;
+      float: left;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 128px;
     }
-    .group-info{
-      height: 100%;
-      padding: 0px 20px;
-      .group{
-      	height: 91px;
-      	&__name{
-      	  font-size: 15px;
-      	  color: #FFFFFF;
-      	  margin: 20px 0px 5px;
-      	}
-      	&__message{
-      	  font-size: 11px;
-      	  color: #FFFFFF;
-      	}
+    .icon{
+      float: right;
+      margin-left: 5px;
+      color: #FFF;
+      line-height: 128px;
+    }
+  }
+  .group-info{
+    height: 100%;
+    padding: 0px 20px;
+    .group{
+      height: 91px;
+      &__name{
+      	font-size: 15px;
+      	color: #FFFFFF;
+      	margin: 20px 0px 5px;
+      }
+      &__message{
+      	font-size: 11px;
+      	color: #FFFFFF;
       }
     }
   }
+}
