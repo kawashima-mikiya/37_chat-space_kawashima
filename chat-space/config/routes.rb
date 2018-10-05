@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  device_for :users
+  # devise_for :users
 
   root 'messages#index'
 end

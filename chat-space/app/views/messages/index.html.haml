@@ -1,0 +1,44 @@
+.html
+.body
+.contents
+
+  = render 'messages/side_content'
+
+  .main-content
+    .header
+      .header-info
+        .header-info__group-name 
+          グループ名
+        .header-info__member-name 
+          メンバー名
+      .edit
+        .edit__button
+          edit
+
+    .message-display
+      .message
+        .message__user-name
+          ryousuke
+        .message__date
+          2016/10/02 06:27:14
+        .message__content
+          なるほど
+      .message
+        .message__user-name
+          ryousuke
+        .message__date
+          2018/10/04 06:27:14
+        .message__content
+          終わらないね
+
+    .submission-form
+      .form
+        %form
+          %input.form
+      .send-botton
+        Send
+      .image
+        .li
+          = link_to do
+            = fa_icon 'picture-o', class: 'icon'
+
