@@ -7,7 +7,9 @@
         メンバー名
     .edit
       .edit__button
-        edit
+        - current_user.groups.each do |group|
+          = link_to groups_path (group) do
+            edit
 
   .message-display
     .message
