@@ -1,0 +1,11 @@
+.submission-form
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, class: 'form__message', placeholder: 'type a message'
+      .send-botton
+        = f.submit 'Send', class: 'form__submit'
+      .image
+        .li
+          = f.label :image, class: 'li__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
