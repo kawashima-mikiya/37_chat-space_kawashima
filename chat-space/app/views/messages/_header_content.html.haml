@@ -1,0 +1,11 @@
+.header
+  .header-info
+    .header-info__group-name
+      = @group.name
+    .header-info__member-name
+      @groups.each do |user_id|
+  .edit
+    .edit__button
+      - current_user.groups.each do |group|
+        = link_to group_path (group) do
+          edit

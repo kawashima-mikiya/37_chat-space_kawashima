@@ -3,6 +3,12 @@
 .contents
 
   = render 'messages/side_content'
-  = render 'messages/main_content'
+  .main-content
+    = render 'messages/header_content'
+
+    .message-display
+      = render @messages
+
+    = render 'submission-form'
 
 

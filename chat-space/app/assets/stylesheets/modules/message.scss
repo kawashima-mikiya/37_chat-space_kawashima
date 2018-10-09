@@ -1,0 +1,60 @@
+.message-display{
+  height: calc(100% - 128px - 140px);
+  padding: 46px 40px 0px;
+  background-color: #AAAAAA;
+  overflow: auto;
+  .message{
+    &__user-name{
+      font-size: 16px;
+     	color: #434A54;
+     	font-weight: bold;
+     	float: left;
+    }
+    &__date{
+     	font-size: 12px;
+     	color: #999999;
+     	float: left;
+      padding-left: 10px;
+    }
+    &__content{
+     	font-size: 14px;
+     	color: #434A54;
+      clear: both;
+      padding:10px 0px 40px;
+    }
+  }
+}
+
+.submission-form{
+	height: 50px;
+	padding: 20px 40px;
+  background-color: white;
+  .form__message{
+    height: 50px;
+    width: 870px;
+   	color: #434A54;
+   	font-size: 16px;
+   	float: left;
+  }
+  .form__submit{
+    border: 1px solid #38AEF0;
+    background-color: #38AEF0;
+    padding: 10px 20px;
+    margin-left: 15px;
+    float: right;
+    height: 50px;
+  }
+  .li__image{
+    color: black;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    line-height: 50px;
+  }
+  .hidden{
+    display: none;
+  }
+}
+
+
+
