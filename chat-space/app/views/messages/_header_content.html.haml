@@ -3,7 +3,7 @@
     .header-info__group-name
       = @group.name
     .header-info__member-name
-      member name
+      = User.joins(:group).where(@groups)
   .edit
     .edit__button
       edit

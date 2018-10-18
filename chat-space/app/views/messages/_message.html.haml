@@ -1,4 +1,4 @@
-.message
+.message{"data-message-id": message.id }
   .message__user-name
     = message.user.name
   .message__date
@@ -7,7 +7,3 @@
     = message.body
   .message__content
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
-
-
-
-
