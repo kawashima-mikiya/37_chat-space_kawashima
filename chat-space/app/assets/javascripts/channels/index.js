@@ -26,27 +26,27 @@ function buildHTML(message) {
     var interval = setInterval(function() {
 
       if (window.location.href.match(/\/groups\/\d+\/messages/)) {
-      	var lastMessageId = $('.message').last().data('message-id');
-	    $.ajax({
-	      url: window.location.href,
-	      data: {id: lastMessageId},
-	      type: 'GET',
-	      dataType:'json',
-	    })
+        var lastMessageId = $('.message').last().data('message-id');
+      $.ajax({
+        url: window.location.href,
+        data: {id: lastMessageId},
+        type: 'GET',
+        dataType:'json',
+      })
 
-	    .done(function(json) {
-	      json.forEach(function(message) {
-		    	var insertHTML = "";
-	      	console.log(message)
+      .done(function(json) {
+        json.forEach(function(message) {
+          var insertHTML = "";
+          console.log(message)
           insertHTML = buildHTML(message);
           $('.message-display').append(insertHTML);
         });
       })
 
-			.fail(function() {
-			  alert('自動更新に失敗しました');
-			});
-		} else {
-    	clearInterval(interval);
-   	}} , 3000);
+      .fail(function() {
+        alert('自動更新に失敗しました');
+      });
+    } else {
+      clearInterval(interval);
+    }} , 3000);
 });
