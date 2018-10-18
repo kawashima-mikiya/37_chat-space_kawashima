@@ -37,6 +37,8 @@ $(document).on('turbolinks:load', function(){
   	  dataType: 'json',
     })
 
+
+
     .done(function(data){
       var html = buildHTML(data);
       $('.message-display').append(html);
