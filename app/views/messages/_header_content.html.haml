@@ -3,7 +3,10 @@
     .header-info__group-name
       = @group.name
     .header-info__member-name
-      = User.joins(:group).where(@groups)
+      -@group.users.each do |user|
+        =user.name + " "
   .edit
     .edit__button
-      edit
+      = link_to edit_group_path(@group) do
+        = submit_tag 'edit', class: 'editt'
+
