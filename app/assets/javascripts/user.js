@@ -34,15 +34,24 @@ $(document).on('turbolinks:load',function() {
     })
 
     .done(function(users)  {
+    if (input.length === 0) {
+      $(".list").remove();
+    }
+    else{
       $("#user-search-result").empty();
       if (users.length !== 0) {
         users.forEach(function(user){
         appendUser(user);
         });
       }
+      // if (input.length === 0) {
+      // $("#user-search-result").remove();
+      // // フォームに値がないときに、listを全て削除する。
+      // }
       else{
         appendNoUser("一致するユーザーはいません");
       }
+    }
     })
     .fail(function(){
       alert('検索に失敗しました');
